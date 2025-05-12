@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 @pytest.fixture()
 def test_setUp():
-    global driver
+    global driver 
     driver=webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://tutorialsninja.com/demo/")
