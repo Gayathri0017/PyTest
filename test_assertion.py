@@ -28,7 +28,7 @@ def test_reg():
     ssn=driver.find_element(locate_with(By.XPATH,"//input[@id='customer.ssn']").near(ph))
     ssn.send_keys("1234")
     un=driver.find_element(By.XPATH,value="//input[@id='customer.username']")
-    un.send_keys("Gayu0021")
+    un.send_keys("Gayu00900")
     pw=driver.find_element(locate_with(By.XPATH,"//input[@id='customer.username']//following::input[1]").below(un))
     pw.send_keys("Gayu@123")
     cp=driver.find_element(locate_with(By.XPATH,"//input[@id='customer.username']//following::input[2]").near(pw))
